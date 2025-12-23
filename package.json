@@ -1,0 +1,15 @@
+{
+  "name": "stitch-marketplace",
+  "version": "1.0.0",
+  "description": "a marketplace for knitted goods",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anastasiia Tkachenko",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.97.1",
+    "vite": "^7.3.0"
+  }
+}
