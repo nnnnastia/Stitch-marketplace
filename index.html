@@ -7,11 +7,54 @@
     <meta name="author" content="Anastasiia Tkachenko">
     <meta name="description" content="This project is marketplace for selling knitted goods.">
     <title>First Page</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <section class="promo">
+        <div class="container">
+            <div class="header">
+                <div class="header__overlay"></div>
+
+                <div class="header__menu">
+                    <button class="header__btn header__menu-close" type="button">
+                        <i class="icon-left-open header__menu-back"></i>
+                    </button>
+
+                    <nav class="header__menu-nav">
+                        <ul>
+                            <li><a class="header__menu-link" href="#">Одяг</a></li>
+                            <li><a class="header__menu-link" href="#">Іграшки</a></li>
+                            <li><a class="header__menu-link" href="#">Шарфи</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header__top">
+                    <div class="burger">
+                        <button class="header__btn header__burger-btn" type="button">
+                            <i class="icon-menu"></i>
+                        </button>
+                    </div>
+
+                    <a href="/index.html" class="header__logo">
+                        <img class="header__logo-img" src="/src/logo/logo.png" alt="logo">
+                    </a>
+
+                    <div class="header__icons-phone">
+                        <a href="#"><span class="icon-heart-empty"></span></a>
+                        <a href="#"><span class="icon-search"></span></a>
+                        <a href="#"><span class="icon-basket"></span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <script type="module" src="/src/js/main.js"></script>
-    <h1>It's my first steps of creating new web-product!</h1>
 </body>
 
 </html>

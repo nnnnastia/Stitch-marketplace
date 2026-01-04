@@ -1,0 +1,114 @@
+@use "/src/sass/base/variables.scss" as *;
+
+.header {
+    &__overlay {
+        position: fixed;
+        inset: 0;
+        background: $blue-lightest;
+        z-index: 1000;
+
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s ease;
+
+        &_active {
+            opacity: 1;
+            pointer-events: all;
+        }
+    }
+
+
+    &__menu {
+        padding: 50px 16px;
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 90vw;
+        max-width: 360px;
+        height: 100vh;
+
+        background-color: $blue-lightest;
+        z-index: 1001;
+
+        transform: translateX(-100%);
+        transition: transform 0.35s ease;
+
+
+        border-right: 1px solid rgba(0, 15, 34, 0.08);
+        border-top-right-radius: 18px;
+        border-bottom-right-radius: 18px;
+
+        &_active {
+            transform: translateX(0);
+            box-shadow: 12px 0 30px rgba(0, 15, 34, 0.18);
+        }
+
+        &-back {
+            width: 20px;
+            height: 20px;
+        }
+
+        &-nav {
+            margin-top: 50px;
+            padding-left: 14px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                row-gap: 25px;
+                padding: 0;
+                list-style: none;
+                margin: 0;
+            }
+        }
+
+        &-link {
+            font-weight: 400;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: $blue-darkest;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+        }
+    }
+
+
+    &__btn {
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: $blue-darkest;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        width: 100px;
+        height: 100px;
+        display: block;
+
+        &-img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+    }
+
+    &__icons-phone {
+        display: flex;
+        gap: 15px;
+
+        a {
+            color: $blue-darkest;
+            text-decoration: none;
+        }
+    }
+}
